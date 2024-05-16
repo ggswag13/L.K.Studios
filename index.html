@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav> 
+                <img src="images/Personal/IMG_0044.JPG" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()" ></i>
+            </nav>
+            <div class="header-text">
+                <p>Filmmaker, Photographer, Live Production</p>
+                <h1>Hello, My name is <span>Gianna Wagnon</span> and I'm from Nashville, TN ♥</h1>
+         </div>
+    </div>
+ </div>
+<!-- ---------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/Personal/Header.jpg.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p> A dynamic filmmaker, editor, and photographer with over three years of experience in collaborative, deadline-oriented settings. 
+                    Thriving on creativity and organization, <br> I consistently deliver top-quality work across various departments. 
+                    Eager to expand my skill set and always open to new learning opportunities, my previous work spans from 
+                    <br>L.K. Studios to my own production business and college projects.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab ('education')">Education</p>
+                </div>
+                <div class= "tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Filmmaker</span><br>Producer, Cimematographer, Editor</li>
+                        <li><span>Photographer</span><br>Weddings, Maternity, Pets, and Sports</li>
+                        <li><span>Live Production</span><br>Lighting Designer, Cam Op, Audio </li>
+                        <li><span>Adobe</span><br> Premier, After Effect, PhotoShop </li>
+                        <li><span>Programs</span><br>Vectorworks, GrandMA 2, EOS, Davinci, Pro Tools</li>
+                        <li><span>Learning</span><br>Blender, Unreal Engine, Coding</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>MTSU Production Services</span><br>Cam Op, Audio, Led, & Lighting Tech</li>
+                        <li><span>MooTv</span><br>Warehouse & Cam Op</li>
+                        <li><span>Art On The Body Film</span><br>Producer, Writer, Director, Editor</li>
+                        <li><span>Website Design</span><br>I just made this website, so please if there are any issues<br> 
+                        let me know so I can learn. If you are looking at this on your phone, so sorry. <br> I haven't learned how 
+                        to fix the sizing of the website. Thanks.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2024</span><br>Middle Tennessee State University <br> BS Video & Film Production </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------Portfolio------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Portfolio</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src ="Images/Personal/Film.jpg">
+                <div class="layer">
+                    <h3>Films</h3>
+                    <p>Here are the films I have worked on and produced.</p>
+                    <a href="Film.html"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src ="Images/Personal/Camera.jpg">
+                <div class="layer">
+                    <h3>Photography</h3>
+                    <p>Here is my portfolio of all my Photography from Football to Weddings to Nature</p>
+                    <a href="Photography.html"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src ="Images/Personal/Lighting.jpg">
+                <div class="layer">
+                    <h3>Live Production</h3>
+                    <p>Here are some photos, videos and work that I have done in the Live Production field.</p>
+                    <a href="LiveProduction.html"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ----------Contact------------- -->
+<div id ="contact">
+    <div class="container">
+        <div class="row">
+           <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-regular fa-paper-plane"></i>L.K.Wagnon13@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>406.920.5442</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/gigi.wagnon.5?mibextid=LQQJ4d"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://www.instagram.com/gg13_photography/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/georgianna-wagnon-662973255/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.youtube.com/channel/UCICld3k0W5xNiDNlTXa7dZA"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <a href="Images/Personal/Wagnon_Resume.pdf" download class="btn btn2">Download Film & Production CV</a>
+           </div>
+           <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <input type = "text" name="Name" placeholder="Your Name" required>
+                <input type = "email" name="email" placeholder="Your Email" required>
+                <textarea name = "Message" rows="6" placeholder="Your Message"></textarea>
+                <button type = "Submit" class="btn btn2">Submit</button>
+            </form>
+            <span id = "msg"></span>
+           </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Gianna. <i class="fa-regular fa-moon"></i></p>
+
+    </div>
+ </div>
+
+
+
+<script src="https://kit.fontawesome.com/1b6360c87a.js" crossorigin="anonymous"></script>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+<form name="submit-to-google-sheet">
+    <input type="email" string="email" placeholder="Email" required/>
+    <button type="submit">Send</button>
+  </form>
+</script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw1Mc47J46ZtYOcrXWSr6_wwwQw8ljcesB_Ma9CJ--EjTgAHugohk9TbCUJcICXCLM/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function() {
+                msg.innerHTML = ""
+            }, 5000);
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  <script>
+    var sidemenu = document.getElementById("sidemenu")
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+  </script>
+</body>
+</html>
